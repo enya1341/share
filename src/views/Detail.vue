@@ -60,7 +60,7 @@ export default {
     },
     comment() {
       axios
-        .get("morning-savannah-05551.herokuapp.com" + this.id)
+        .get("morning-savannah-05551.herokuapp.com/api/detail" + this.id)
         .then((response) => {
           this.data = response.data.comment;
         });

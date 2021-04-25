@@ -32,7 +32,7 @@ export default {
   methods: {
     auth() {
       axios
-        .post(" mysql://b3b68771563a1a:c2eb7952@us-cdbr-east-03.cleardb.com/heroku_572c1e054e27c87?reconnect=true/api/register", {
+        .post("morning-savannah-05551.herokuapp.com/api/signup", {
           name: this.name,
           profile: this.profile,
           email: this.email,
