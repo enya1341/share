@@ -28,6 +28,7 @@ export default new Vuex.Store({
   },
   actions: {
     async login({ commit }, { email, password }) {
+      console.log(12)
       const responseLogin = await axios.post(
         "https://morning-savannah-05551.herokuapp.com/api/login",
         {
