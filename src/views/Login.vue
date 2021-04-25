@@ -7,6 +7,7 @@
         <input placeholder="メールアドレス" type="email" v-model="email" />
         <input placeholder="パスワード" type="password" v-model="password" />
         <button @click="auth">ログイン</button>
+        <h1>aaaaa</h1>
       </div>
     </div>
   </div>
