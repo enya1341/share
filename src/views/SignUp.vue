@@ -31,6 +31,7 @@ export default {
   },
   methods: {
     auth() {
+      console.log("a")
       axios
         .post("morning-savannah-05551.herokuapp.com/api/signup", {
           name: this.name,
