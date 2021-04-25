@@ -37,7 +37,7 @@ export default new Vuex.Store({
         }
       );
       const responseUser = await axios.get(
-        "morning-savannah-05551.herokuapp.com/api/login",
+        "https://morning-savannah-05551.herokuapp.com/api/login",
         {
           params: {
             email: email,
@@ -50,7 +50,7 @@ export default new Vuex.Store({
     },
     logout({ commit }) {
       axios
-        .post("morning-savannah-05551.herokuapp.com/api/logout", {
+        .post("https://morning-savannah-05551.herokuapp.com/api/logout", {
           auth: this.state.auth,
         })
         .then((response) => {

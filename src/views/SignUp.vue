@@ -33,7 +33,7 @@ export default {
     auth() {
       console.log("a")
       axios
-        .post("morning-savannah-05551.herokuapp.com/api/signup", {
+        .post("https://morning-savannah-05551.herokuapp.com/api/signup", {
           name: this.name,
           profile: this.profile,
           email: this.email,

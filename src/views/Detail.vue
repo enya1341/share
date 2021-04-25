@@ -44,7 +44,7 @@ export default {
   methods: {
     send() {
       axios
-        .post("morning-savannah-05551.herokuapp.com", {
+        .post("https://morning-savannah-05551.herokuapp.com", {
           share_id: this.id,
           user_id: this.$store.state.user.id,
           content: this.content,
@@ -60,7 +60,7 @@ export default {
     },
     comment() {
       axios
-        .get("morning-savannah-05551.herokuapp.com/api/detail" + this.id)
+        .get("https://morning-savannah-05551.herokuapp.com/api/detail" + this.id)
         .then((response) => {
           this.data = response.data.comment;
         });
