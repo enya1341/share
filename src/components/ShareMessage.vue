@@ -22,7 +22,7 @@ export default {
         alert("シェアする内容を入力してください");
       } else {
         axios
-          .post("mysql://b3b68771563a1a:c2eb7952@us-cdbr-east-03.cleardb.com/heroku_572c1e054e27c87?reconnect=true/api/shares", {
+          .post("morning-savannah-05551.herokuapp.com", {
             user_id: this.$store.state.user.id,
             share: this.share,
           })

@@ -53,7 +53,7 @@ export default {
           if (element.user_id == this.$store.state.user.id) {
             axios({
               method: "delete",
-              url: "mysql://b3b68771563a1a:c2eb7952@us-cdbr-east-03.cleardb.com/heroku_572c1e054e27c87?reconnect=true/api/like",
+              url: "morning-savannah-05551.herokuapp.com",
               data: {
                 share_id: this.shares[index].item.id,
                 user_id: this.$store.state.user.id,
@@ -69,7 +69,7 @@ export default {
         });
       } else {
         axios
-          .post("mysql://b3b68771563a1a:c2eb7952@us-cdbr-east-03.cleardb.com/heroku_572c1e054e27c87?reconnect=true/api/like", {
+          .post("morning-savannah-05551.herokuapp.com", {
             share_id: this.shares[index].item.id,
             user_id: this.$store.state.user.id,
           })
@@ -85,7 +85,7 @@ export default {
     del(index) {
       axios
         .delete(
-          "mysql://b3b68771563a1a:c2eb7952@us-cdbr-east-03.cleardb.com/heroku_572c1e054e27c87?reconnect=true/api/shares/" +
+          "morning-savannah-05551.herokuapp.com" +
             this.shares[index].item.id
         )
         .then((response) => {
@@ -99,12 +99,12 @@ export default {
     async getShares() {
       let data = [];
       const shares = await axios.get(
-        "mysql://b3b68771563a1a:c2eb7952@us-cdbr-east-03.cleardb.com/heroku_572c1e054e27c87?reconnect=true/api/shares"
+        "morning-savannah-05551.herokuapp.com"
       );
       for (let i = 0; i < shares.data.data.length; i++) {
         await axios
           .get(
-            "mysql://b3b68771563a1a:c2eb7952@us-cdbr-east-03.cleardb.com/heroku_572c1e054e27c87?reconnect=true/api/shares/" +
+            "morning-savannah-05551.herokuapp.com" +
               shares.data.data[i].id
           )
           .then((response) => {

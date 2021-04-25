@@ -38,7 +38,7 @@ export default {
     edit() {
       if (!this.active) {
         axios
-          .put("mysql://b3b68771563a1a:c2eb7952@us-cdbr-east-03.cleardb.com/heroku_572c1e054e27c87?reconnect=true/api/user", {
+          .put("morning-savannah-05551.herokuapp.com", {
             email: this.$store.state.user.email,
             profile: this.profile,
           })
