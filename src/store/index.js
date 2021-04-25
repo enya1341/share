@@ -29,7 +29,7 @@ export default new Vuex.Store({
   actions: {
     async login({ commit }, { email, password }) {
       const responseLogin = await axios.post(
-        "morning-savannah-05551.herokuapp.com/api/login",
+        "https://morning-savannah-05551.herokuapp.com/api/login",
         {
           email: email,
           password: password,
