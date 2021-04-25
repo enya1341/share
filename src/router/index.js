@@ -60,9 +60,7 @@ router.beforeEach((to, from, next) => {
   ) {
     next({
       path: "/",
-      query: {
-        redirect: to.fullPath,
-      },
+      redirect: to.fullPath
     });
   } else {
     next();
