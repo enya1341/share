@@ -104,7 +104,7 @@ export default {
       for (let i = 0; i < shares.data.data.length; i++) {
         await axios
           .get(
-            "https://morning-savannah-05551.herokuapp.com/api/shares" +
+            "https://morning-savannah-05551.herokuapp.com/api/shares/" +
               shares.data.data[i].id
           )
           .then((response) => {
