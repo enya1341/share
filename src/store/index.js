@@ -37,7 +37,7 @@ export default new Vuex.Store({
         }
       );
       const responseUser = await axios.get(
-        "https://morning-savannah-05551.herokuapp.com/api/login",
+        "https://morning-savannah-05551.herokuapp.com/api/user",
         {
           params: {
             email: email,
